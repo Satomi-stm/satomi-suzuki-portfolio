@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- 
+      This is an HTML comment
+      You can write text in a comment and the content won't be visible in the page
+    -->
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://i.ibb.co/PcLL8nk/paw.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tinos&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://kit.fontawesome.com/e2d60f9945.js" crossorigin="anonymous"></script>
+
+    <!--
+      This is the page head - it contains info the browser uses
+      Like the title, which appears on the browser tab but not inside the page
+      Further down you'll see the content that displays in the page
+    -->
+    <title>Satomi Suzuki</title>
+
+    <!-- The website stylesheet -->
+    <link rel="stylesheet" href="style.css" >
+
+    <!-- The website JavaScript file -->
+    <script src="/script.js" defer></script>
+  </head>
+            <header class="fixed-top">
+              <h1 class="title">Satomi Suzuki</h1>
+              <nav class="nav">
+                  <ul class="menu-group">
+                      <li class="menu-item"><a href="#profile">Proflile</a></li>
+                      <li class="menu-item"><a href="#skills">Skills</a></li>
+                      <li class="menu-item"><a href="#works">Works</a></li>
+                      <li class="menu-item"><a href="#contact">Contact</a></li>
+                  </ul>
+              </nav>
+          </header>
+
+  <body>
+    <!--
+      The body includes the content you see in the page
+      Each element is defined using tags, like this <div></div>
+      The attributes like class="wrapper" let us style elements in the CSS
+    -->
+    <div class="wrapper">
+      <div class="content" role="main">
+
+        <!--トップ画面-->
+        <div class="top">
+          <h1>Hello, I'm Satomi.</h1>
+          <img src="https://i.ibb.co/YXpf3YM/4800-9-04.jpg">
+        </div>
+        
+        <!--プロフィール-->
+        <div class="profile" id="profile">
+          <h1 class = "section-title">Profile</h1>
+          <p class = "profile-text">
+            <h3 class="profile-header-text">I am an undergraduate student interested in software engineering and data analysis.</h3> I am attracted to software engineering because of the joy of being able to create something impactful with my own hands. I have been learning programming since April, 2022 and have knowledge of both the front-end and back-end. I also study econometrics at university, and I am trying to clarify the relationship between economic theory and actual events in the world by analyzing data. The act of observing the essence of the world through data analysis tickles my spirit of intellectual pursuit, and I would like to contribute to society by using these skills.
+          </p>
+          
+        </div>
+        
+        <!--スキル-->
+        <div class="skills" id="skills">
+          <h1 class="section-title">Skills</h1>
+          <div class = "skill-list">
+           <div class="card-deck">
+  <div class="card ">
+    
+    <div class="card-body">
+      <h5 class="card-title">HTML/CSS</h5>
+      <ul class="card-text">
+        <li>Developing web pages</li>
+        <li>Bootstrap</li>
+      
+      </ul>
+      <p class="card-text"><small class="text-muted">Since April, 2022</small></p>
+    </div>
+  </div>
+  <div class="card ">
+   
+    <div class="card-body">
+      <h5 class="card-title">Python</h5>
+      <ul class="card-text">
+        <li>Learning algorythm & data structure </li>
+        <li>Wrote about 2000 line</li>
+      </ul>
+      <p class="card-text"><small class="text-muted">Since April, 2022</small></p>
+    </div>
+  </div>
+  <div class="card ">
+  
+    <div class="card-body">
+      <h5 class="card-title">Java Script</h5>
+      <ul class="card-text">
+        <li>Developing web applications</li>
+        <li>Node.js / Express</li>
+        <li>Postman</li>
+      </ul>
+      <p class="card-text"><small class="text-muted">Since October, 2022</small></p>
+    </div>
+  </div>
+             
+   <div class="card ">
+  
+    <div class="card-body">
+      <h5 class="card-title">Git/Github</h5>
+      <ul class="card-text">
+        <li>Learned them for a team development</li>
+        <li>Being able to use branches properly</li>
+      </ul>
+      <p class="card-text"><small class="text-muted">Since October, 2022</small></p>
+    </div>
+  </div>
+             
+   <div class="card ">
+  
+    <div class="card-body">
+      <h5 class="card-title">Relational Database</h5>
+      <ul class="card-text">
+        <li>PostgreSQL</li>
+        <li>SQL</li>
+        <li>Prisma</li>
+      </ul>
+      
+      <p class="card-text"><small class="text-muted">Since December, 2022</small></p>
+    </div>
+  </div>
+</div>
+            
+          </div>
+          
+        </div>
+        
+        <!--自分の仕事や成果物-->
+        <div class="works" id="works">
+          <h1 class="section-title">Works</h1>
+          <div class="work-list">      
+<!--             grid style -->
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+  <div class="col">
+    <div class="card h-100">
+      <img src="https://i.ibb.co/Vxqsmpy/image.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Mazellan Food Record</h5>
+        <p class="card-text">This is an app that keeps track of all the international restaurants you have been to.</p>
+        <a href="https://github.com/Satomi-stm/Magellan-food-record" class="btn btn-primary">Click here</a>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="https://i.ibb.co/d5T2b0w/5178019.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Coming soon...</h5>
+        <p class="card-text">Please look forward to my new work!</p>
+        <a href="#" class="btn btn-primary">No link</a>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="https://i.ibb.co/d5T2b0w/5178019.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Coming soon...</h5>
+        <p class="card-text">Please look forward to my new work!</p>
+        <a href="#" class="btn btn-primary">No link</a>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="https://i.ibb.co/d5T2b0w/5178019.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Coming soon...</h5>
+        <p class="card-text">Please look forward to my new work!</p>
+        <a href="#" class="btn btn-primary">No link</a>
+      </div>
+    </div>
+  </div>
+</div>
+          </div>
+          
+        </div>
+        
+        
+        
+      </div>
+      
+      
+    <!--コンタクト-->
+        <div class="contact" id="contact">
+          <h1 class= "section-title">Contact</h1>
+          <div class="section-contact">
+            <a class="fa-brands fa-github" href = "https://github.com/Satomi-stm"></a>
+            <a class="fa-brands fa-linkedin" style="color: #0a66c2" href="https://www.linkedin.com/in/suzuki-satomi3103/"></a>
+            <a class="fa-brands fa-twitter" style="color: #00acee;" href = "https://twitter.com/ursatomi"></a>
+            <i class="fa-solid fa-envelope"></i>
+            <p>email: satomi.suzuki001@gmail.com</p>
+          </div>
+        </div>
+    </div>
+    
+    
+    <!-- The footer holds our remix button — you can keep or delete it ✂ -->
+   <!-- footer -->
+  <footer>
+　　<ul class="footer-menu">
+    <li><a href="#profile">Profile ｜</a></li>
+    <li><a href="#skills">Skills ｜</a></li>
+    <li><a href="#works">Works ｜</a></li>
+    <li><a href="#contact">Contact</a></li>
+    </ul>
+    <p>© Satomi Suzuki</p>
+  </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>
