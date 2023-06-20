@@ -1,0 +1,213 @@
+/* Our default values set as CSS variables */
+:root {
+    /*   --color-bg: #69F7BE;
+      --color-text-main: #000000;
+      --color-primary: #FFFF00;
+      --wrapper-height: 87vh;
+    /*   --image-max-width: 300px; */
+    /*   --image-margin: 3rem; */ */
+      --font-family: 'Tinos', serif;
+      --font-family-header:'Tinos', serif;
+    }
+    
+    /* Basic page style resets */
+    * {
+      box-sizing: border-box;
+    }
+    [hidden] {
+      display: none !important;
+    }
+    
+    /* Import fonts */
+    @font-face {
+      font-family: HK Grotesk;
+      src: url("https://cdn.glitch.me/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Regular.otf?v=1603136326027")
+        format("opentype");
+    }
+    @font-face {
+      font-family: HK Grotesk;
+      font-weight: bold;
+      src: url("https://cdn.glitch.me/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Bold.otf?v=1603136323437")
+        format("opentype");
+    }
+    
+    header {
+        display: flex;
+        width: 100%;
+        height: 100px;
+    /*     position: fixed; */
+        background-color:white;
+        border-bottom:
+        align-items: center;
+        font-family: 'Tinos', serif;
+      }
+       
+      .title {
+        color:black;
+        margin-top:20px;
+        margin-left:60px;
+        margin-right:auto;
+        float: left;
+      }
+       
+    a{
+      text-decoration:none;
+      color:black;
+    }
+      .menu-item {
+        list-style: none;
+        font-size:25px;
+        float: left;
+        margin:35px 60px 10px 10px;
+      }
+      
+    body{
+      width:100%;
+      margin:0px;
+      padding:0px;
+      text-align:center;
+    }
+    
+    .wrapper{
+      margin-left:auto;
+      margin-right:auto;
+      margin-top:160px;
+      text-align:left;
+      width:700px;
+      font-family: 'Tinos', serif;
+      font-weight: bold;
+    }
+    
+    
+    
+    .top img{
+      border-radius: 50%; 
+      vertical-align:middle;
+      display: inline-block;
+      width: 300px;
+      height:300px;
+      margin-left: 40px;
+    }
+    .top h1{
+      display: inline-block;
+      font-size:33px;
+      margin-right:80px;
+      padding-left:30px;
+    }
+    
+    .section-title{
+      padding-top: 80px;
+    }
+    
+    
+    .btn-primary{
+      background: #fcccec;
+      border: none;
+    }
+    
+    .btn-primary:hover{
+      background-color:#fc32b9;
+    }
+    
+    footer{
+        padding-top:70px;
+        width: 100%;
+        height: 100px;
+        font-family: 'Tinos', serif;
+        color: black;
+        font-size:20px;
+        text-align: center;
+    }
+    ul.footer-menu li {
+    display: inline;
+    }
+    
+    .fa-brands, .fa-solid{
+      font-size:33px;
+    }
+    
+    
+    .section-contact{
+      pdding-top:10px;
+    }
+    
+    
+    .profile-text{
+      font-size:30px;
+    }
+    
+    
+    @media screen and (max-width: 480px) {
+        /* 480px以下に適用されるCSS（スマホ用） */
+      header {
+        display: flex;
+        width: 100%;
+        height: 100px;
+    /*     position: fixed; */
+        background-color:white;
+        border-bottom:
+        align-items: center;
+        font-family: 'Tinos', serif;
+      }
+       
+      .title {
+        color:black;
+        margin-top:20px;
+        margin-left:5px;
+        margin-right:auto;
+        float: left;
+      }
+      
+      a{
+      text-decoration:none;
+      color:black;
+    }
+      .menu-item {
+        list-style: none;
+        font-size:15px;
+        float: left;
+        margin:35px 10px 10px 10px;
+      }
+      
+     .profile, .skills, .works, .contact{
+        margin:0px 15px 0px 15px;
+      }
+      
+      .top img{
+      border-radius: 50%; 
+      vertical-align:middle;
+      display: inline-block;
+      width: 300px;
+      height:300px;
+      margin-left: 20px;
+    }
+    .top h1{
+      display: inline-block;
+      font-size:33px;
+      margin-right:60px;
+      padding-left:30px;
+    }
+      
+      footer{
+        padding-top:70px;
+        width: 100%;
+        height: 100px;
+        font-family: 'Tinos', serif;
+        color: black;
+        font-size:20px;
+        text-align: center;
+    }
+      ul.footer-menu li {
+        margin-left:auto;
+        margin-right:auto;
+        margin-top:160px;
+        text-align:left;
+        width:700px;
+        font-family: 'Tinos', serif;
+        font-weight: bold;
+        display: inline;
+        font-size:15px;
+      }
+    }
+    
+    
